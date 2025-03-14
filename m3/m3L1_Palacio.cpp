@@ -11,12 +11,12 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
    // Make two stacks, one bounded to 4 items and the other unbounded
-   ArrayStack boundedStack(4);
+   ArrayStack boundedStack(7);
    ArrayStack unboundedStack;
     
    // Push 8 items to each
-   cout << "Pushing values 1 through 8 to each stack" << endl;
-   for (int i = 1; i <= 8; i++) {
+   cout << "Pushing values 1 through 4 to each stack" << endl;
+   for (int i = 1; i <= 4; i++) {
       boundedStack.Push(i);
       unboundedStack.Push(i);
    }
@@ -29,8 +29,8 @@ int main(int argc, char* argv[]) {
    }
 
    // Push 4 more items onto each stack
-   cout << "Pushing values to each stack: 10, 20, 30 and 40" << endl;
-   for (int i = 10; i <= 40; i += 10) {
+   cout << "Pushing values to each stack" << endl;
+   for (int i = 10; i <= 524290; i += i^2) {
       boundedStack.Push(i);
       unboundedStack.Push(i);
    }
