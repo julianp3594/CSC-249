@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void ArrayQueue();
+void ArrayQueues();
 void LLStackQueue();
 
 int main() {
@@ -32,9 +32,9 @@ int main() {
         return 0;
     }
     return 0;
-};
+}
 
-void ArrayQueue() {
+void ArrayQueues() {
     // Make two queues, one bounded to 4 items and the other bounded
     ArrayQueue boundedQueue(4);
     ArrayQueue unboundedQueue;
@@ -73,4 +73,9 @@ void ArrayQueue() {
    while (unboundedQueue.GetLength() > 0) {
       cout << "  " << unboundedQueue.Dequeue() << endl;
    }
+   return;
+}
+
+void LLStackQueue() {
+
 }
