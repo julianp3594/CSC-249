@@ -2,7 +2,7 @@
 #define SINGLYLINKEDLISTSTACK_H
 
 #include <iostream>
-
+/*
 class Node {
 public:
    int data;
@@ -155,7 +155,7 @@ public:
       return head->data;
    }
 };
-
+*/
 class SinglyLinkedListStack {
 private:
    LinkedList linkedList;
